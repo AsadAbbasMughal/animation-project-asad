@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(banner1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+.earth{
+    width: 350px;
+    height: 350px;
+    background-image: url(earth-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: earth-circle 15s linear infinite;
+    /* border: 1px solid rgba(255, 255, 255, 0.651); */
+}
+@keyframes  earth-circle{
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+.car_parent{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: circle 15s linear infinite;
+    animation-direction: reverse;
+}
+
+@keyframes circle{
+    100%{
+        transform: translate(-50%,-50%)
+        rotate(360deg);
+    }
+}
+
+.car{
+    width: 180px;
+    height: 180px;
+    background-image: url(pngtree-yellow-car-side-view-vector-illustration-in-trendy-flat-style-isolated-png-image_6585619-removebg-preview.png);
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    transform: rotate(-45deg);
+}
